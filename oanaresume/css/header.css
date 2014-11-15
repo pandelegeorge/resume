@@ -1,0 +1,49 @@
+#transmenubackground{
+	width: 100%;
+	text-align:center;
+	background-color:#000000;
+	/* works for IE 5+. */
+	filter:alpha(opacity=60); 
+	/* works for IE 8. */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	/* works for old school versions of the Mozilla browsers like Netscape Navigator. */
+	-moz-opacity:0.6; 
+	/* This is for old versions of Safari (1.x) with KHTML rendering engine */
+	-khtml-opacity: 0.6; 
+	/* This is the "most important" one because it's the current standard in CSS. This will work in most versions of Firefox, Safari, and Opera. */  
+	opacity: 0.6; 
+}
+#transmenu
+{
+	height:40px;
+	margin-top:3px;
+	padding-top: 15px;
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+#transmenu ul {
+	 min-width: 1200px;
+	 list-style-type: none;
+	 display: inline;
+	 margin-left: 0;
+	 padding-left: 0;
+}
+#transmenu ul li {
+	white-space:nowrap;
+	height:25px;
+	display: inline;
+	list-style: none;
+	text-align:center;
+	line-height:25px;
+	padding: 4px 15px 10px;
+	color:#FFFFFF;
+	border-right:1px solid #FFFFFF; 
+	
+}
+#transmenu ul li a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+#transmenu ul li.last {
+	border-right: none;
+}
